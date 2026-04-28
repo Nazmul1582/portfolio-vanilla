@@ -1,0 +1,1439 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Nazmul Hasan | Frontend Team Lead & Engineer</title>
+    <meta
+      name="description"
+      content="Frontend Team Lead with 2+ years scaling e-commerce platforms. Vue 3, React, TypeScript, GraphQL specialist. Open to mid-level frontend roles."
+    />
+    <meta name="author" content="Md. Nazmul Hasan" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Favicon - Letter N with Gradient -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='72' font-size='60' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial, sans-serif'%3EN%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Tailwind CSS CDN + Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config will be applied via external script -->
+
+    <!-- External Styles & Scripts -->
+    <link rel="stylesheet" href="style.css" />
+    <base target="_blank" />
+  </head>
+
+  <body class="bg-slate-950 text-slate-200 font-sans antialiased">
+    <canvas id="particles"></canvas>
+
+    <nav id="navbar" class="transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+          <a
+            href="#"
+            class="text-xl lg:text-2xl font-bold tracking-tight text-gradient"
+          >
+            Nazmul
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+              >About</a
+            >
+            <a
+              href="#experience"
+              class="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+              >Experience</a
+            >
+            <a
+              href="#projects"
+              class="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+              >Projects</a
+            >
+            <a
+              href="#skills"
+              class="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="px-5 py-2.5 text-sm font-medium bg-gradient text-white rounded-full transition-all hover:scale-105"
+              >Contact</a
+            >
+          </div>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 text-slate-400 hover:text-white"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden glass border-t border-slate-800"
+      >
+        <div class="px-4 pt-2 pb-6 space-y-2">
+          <a
+            href="#home"
+            class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg"
+            >About</a
+          >
+          <a
+            href="#experience"
+            class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg"
+            >Projects</a
+          >
+          <a
+            href="#skills"
+            class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg"
+            >Skills</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 text-base font-medium text-gradient hover:opacity-80"
+            >Contact Me →</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style="padding-top: 5rem"
+    >
+      <div class="absolute inset-0 bg-grid opacity-20"></div>
+      <div
+        class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl animate-pulse"
+        style="animation-delay: 1s"
+      ></div>
+
+      <div
+        class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+      >
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700 text-sm text-gradient mb-6 animate-fade-in"
+        >
+          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          Available for Mid Level Frontend Roles
+        </div>
+
+        <h1
+          class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-gradient animate-fade-in"
+        >
+          Md. Nazmul Hasan
+        </h1>
+
+        <div class="h-8 mb-8 flex justify-center overflow-hidden">
+          <p
+            id="typewriter"
+            class="sm:text-2xl text-slate-400 font-light border-r-2 border-blue-500 pr-1"
+          ></p>
+        </div>
+
+        <p
+          class="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 mb-10 leading-relaxed animate-slide-up"
+          style="animation-delay: 0.3s"
+        >
+          Scaling e-commerce platforms with
+          <span class="text-white font-semibold">15+ production apps</span>.
+          Leading frontend delivery across storefronts, admin dashboards, and
+          LMS platforms. Vue 3, React, TypeScript & GraphQL specialist.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up"
+          style="animation-delay: 0.5s"
+        >
+          <a
+            href="#projects"
+            class="group px-8 py-3 bg-gradient text-white font-semibold rounded-full transition-all hover:scale-105 flex items-center gap-2"
+          >
+            View My Work
+            <i
+              class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+            ></i>
+          </a>
+          <a
+            href="https://github.com/nazmul1582"
+            target="_blank"
+            class="px-8 py-[11px] bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-full transition-all hover:scale-105 border border-slate-700"
+          >
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+        </div>
+
+        <div
+          class="mt-12 flex flex-wrap gap-6 justify-center animate-slide-up"
+          style="animation-delay: 0.7s"
+        >
+          <div class="flex items-center gap-2 text-slate-400 text-sm">
+            <i class="fas fa-check-circle text-gradient"></i>
+            <span>15+ Production Apps</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-400 text-sm">
+            <i class="fas fa-check-circle text-gradient"></i>
+            <span>4 Promotions in 2 Years</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-400 text-sm">
+            <i class="fas fa-check-circle text-gradient"></i>
+            <span>Team Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <i class="fas fa-chevron-down text-slate-600 text-xl"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-5 gap-16 items-center">
+          <div class="reveal lg:col-span-3">
+            <h2
+              class="text-sm font-semibold text-gradient uppercase tracking-wider mb-3"
+            >
+              About Me
+            </h2>
+            <h3
+              class="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight"
+            >
+              From Intern to <span class="text-gradient">Team Lead</span> in 2
+              Years
+            </h3>
+            <div class="space-y-4 text-slate-400 text-lg leading-relaxed">
+              <p>
+                Hello, I am Md. Nazmul Hasan, a Frontend Team Lead and
+                frontend-focused full stack developer with production experience
+                in e-commerce storefronts, admin dashboards, LMS products, and
+                platform systems.
+              </p>
+              <p>
+                Since February 2024, I've been a core part of the
+                <span class="text-white font-medium">Bponi/frontend</span>
+                ecosystem, delivering across 15+ production products. I
+                converted from Intern to Full-Time and was promoted to Frontend
+                Team Lead due to strong frontend delivery, production support,
+                ownership, and consistent contribution across high-impact
+                production systems.
+              </p>
+              <p>
+                My strongest expertise is frontend engineering: Vue 3, React,
+                TypeScript, JavaScript, Vite, Tailwind CSS, Apollo GraphQL, and
+                e-commerce systems including checkout, catalog, coupons,
+                campaigns, POS, orders, and multi-storefront themes.
+              </p>
+              <p>
+                I use
+                <span class="text-white font-medium"
+                  >AI-assisted engineering (Codex Pro)</span
+                >
+                as a core part of my workflow — for codebase exploration,
+                implementation planning, debugging, refactoring, and faster
+                delivery across frontend, backend, and database work.
+              </p>
+            </div>
+
+            <div class="mt-8 grid grid-cols-2 gap-4">
+              <div
+                class="p-4 rounded-xl bg-slate-800/50 border border-slate-700"
+              >
+                <i class="fas fa-rocket text-gradient mb-2"></i>
+                <div class="text-white font-semibold">Fast Growth</div>
+                <div class="text-sm text-slate-500">
+                  Intern → Lead in 24 months
+                </div>
+              </div>
+              <div
+                class="p-4 rounded-xl bg-slate-800/50 border border-slate-700"
+              >
+                <i class="fas fa-users text-gradient mb-2"></i>
+                <div class="text-white font-semibold">Team Leadership</div>
+                <div class="text-sm text-slate-500">
+                  Code reviews & mentoring
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal relative lg:col-span-2">
+            <div
+              class="bg-gradient-to-br from-blue-900/50 to-purple-900/50 border border-slate-700 rounded-2xl p-8 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 bg-grid opacity-10"></div>
+              <div class="relative z-10">
+                <h4 class="text-xl font-bold text-white mb-2">
+                  Boisodai Scale
+                </h4>
+                <p class="text-slate-400 text-sm mb-6">
+                  Bangladesh's largest book e-commerce platform
+                </p>
+
+                <div class="grid grid-cols-2 gap-6">
+                  <div class="text-center p-4 bg-slate-800/75 rounded-xl">
+                    <div
+                      class="text-3xl font-bold text-white counter-value"
+                      data-target="200"
+                    >
+                      0
+                    </div>
+                    <div class="text-sm text-slate-400 mt-1">Books</div>
+                  </div>
+                  <div class="text-center p-4 bg-slate-800/75 rounded-xl">
+                    <div
+                      class="text-3xl font-bold text-white counter-value"
+                      data-target="50"
+                    >
+                      0
+                    </div>
+                    <div class="text-sm text-slate-400 mt-1">Authors</div>
+                  </div>
+                  <div class="text-center p-4 bg-slate-800/75 rounded-xl">
+                    <div
+                      class="text-3xl font-bold text-white counter-value"
+                      data-target="7"
+                    >
+                      0
+                    </div>
+                    <div class="text-sm text-slate-400 mt-1">Publishers</div>
+                  </div>
+                  <div class="text-center p-4 bg-slate-800/75 rounded-xl">
+                    <div
+                      class="text-3xl font-bold text-white counter-value"
+                      data-target="230"
+                    >
+                      0
+                    </div>
+                    <div class="text-sm text-slate-400 mt-1">Customers</div>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                  <div class="flex items-center justify-between text-sm">
+                    <span class="text-slate-400">Total Orders</span>
+                    <span class="text-white font-bold">220K+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute -bottom-4 -right-4 bg-gradient text-white px-4 py-2 rounded-lg shadow-lg font-semibold text-sm"
+            >
+              <i class="fas fa-chart-line mr-1"></i> Live Platform
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-slate-900/50 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <h2
+            class="text-sm font-semibold text-gradient uppercase tracking-wider mb-3"
+          >
+            Experience
+          </h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-white">
+            Career Trajectory
+          </h3>
+        </div>
+
+        <div class="max-w-4xl mx-auto relative timeline-line pl-8 reveal">
+          <div class="relative mb-12 lg:pl-8">
+            <div
+              class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-gradient border-4 border-slate-900 shadow-lg"
+            ></div>
+            <div
+              class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-blue-500/50 transition-colors"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <h4 class="text-xl font-bold text-white">
+                    Frontend Team Lead
+                  </h4>
+                  <p class="text-gradient font-medium">Bponi</p>
+                </div>
+                <div
+                  class="self-end sm:self-center px-3 py-1 bg-gradient text-white text-sm rounded-full"
+                >
+                  Current
+                </div>
+              </div>
+              <p class="text-slate-400 text-sm mb-4">Feb 2024 – Present</p>
+              <ul class="space-y-2 text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Leading frontend delivery across
+                    <strong class="text-white">15+ production apps</strong>
+                    including store-admin, store-book, lms-admin, lms-edo,
+                    systems-admin, and more</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Task coordination, code review, mentoring, production issue
+                    resolution, and multi-project delivery ownership</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Major contributor to
+                    <strong class="text-white">Boisodai</strong> (200K+ books,
+                    50K+ authors, 7K+ publishers, 230K+ customers, 220K+
+                    orders)</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Architected shared platform features: cart, checkout,
+                    payment gateways, coupons, reselling, affiliate, logistics,
+                    and i18n</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Migrated store-admin & store-book to React/TypeScript/Vite
+                    with Apollo Client, standardizing pagination and debounced
+                    search across 20+ views</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative mb-12 lg:pl-8">
+            <div
+              class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-slate-600 border-4 border-slate-900"
+            ></div>
+            <div
+              class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-blue-500/50 transition-colors"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <h4 class="text-xl font-bold text-white">
+                    Frontend Developer
+                  </h4>
+                  <p class="text-gradient font-medium">Bponi</p>
+                </div>
+                <div
+                  class="self-end sm:self-center px-3 py-1 bg-green-500/10 text-green-400 text-sm rounded-full border border-green-500/20"
+                >
+                  Promoted
+                </div>
+              </div>
+              <p class="text-slate-400 text-sm mb-4">May 2024 – Dec 2024</p>
+              <ul class="space-y-2 text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Converted from intern to full-time; took ownership of
+                    frontend delivery across multiple production apps</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Built multi-brand storefront themes with analytics
+                    integrations, dark mode, Bangla i18n, and responsive
+                    layouts</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Developed systems admin modules: catalog, POS, campaigns,
+                    data-table UX with full i18n coverage</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative lg:pl-8">
+            <div
+              class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-slate-700 border-4 border-slate-900"
+            ></div>
+            <div
+              class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-blue-500/50 transition-colors"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <h4 class="text-xl font-bold text-white">Frontend Intern</h4>
+                  <p class="text-gradient font-medium">Bponi</p>
+                </div>
+                <div
+                  class="self-end sm:self-center px-3 py-1 bg-slate-700 text-slate-300 text-sm rounded-full whitespace-nowrap"
+                >
+                  Started Here
+                </div>
+              </div>
+              <p class="text-slate-400 text-sm mb-4">Feb 2024 – April 2024</p>
+              <ul class="space-y-2 text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Worked on e-commerce issues and features using
+                    <strong class="text-white">Vue 3</strong> in store-admin,
+                    store-foodi, store-furn, store-zeen and others</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i
+                    class="fas fa-chevron-right text-gradient mt-1 text-xs"
+                  ></i>
+                  <span
+                    >Learned production-grade Vue 3, Pinia, GraphQL, and
+                    e-commerce patterns under senior mentorship</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <h2
+            class="text-sm font-semibold text-gradient uppercase tracking-wider mb-3"
+          >
+            Featured Work
+          </h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Production-Scale Projects
+          </h3>
+          <p class="text-slate-400 max-w-2xl mx-auto">
+            Real platforms serving real customers. Live links to production
+            systems I've built and maintained.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Boisodai -->
+          <div
+            class="project-card group bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden reveal"
+          >
+            <a
+              href="https://boisodai.com"
+              target="_blank"
+              class="block h-48 bg-gradient-to-br from-blue-900/50 to-purple-900/50 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-book-open text-6xl text-white/10 group-hover:scale-110 transition-transform duration-500"
+                ></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur rounded-full text-xs text-white border border-white/10"
+              >
+                Live Site
+              </div>
+            </a>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <a
+                  href="https://boisodai.com"
+                  target="_blank"
+                  class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors link-hover"
+                >
+                  Boisodai
+                </a>
+                <a
+                  href="https://boisodai.com"
+                  target="_blank"
+                  class="text-slate-400 hover:text-white transition-colors"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Bangladesh's largest book e-commerce platform. 200K+ books, 50K+
+                authors, 7K+ publishers, 230K+ customers, 220K+ orders.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Reselling with custom pricing</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Multi-auth (Google, Email, OTP)</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Membership & coupon system</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded border border-blue-500/20"
+                  >Vue 3</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded border border-blue-500/20"
+                  >Pinia</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded border border-blue-500/20"
+                  >GraphQL</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded border border-blue-500/20"
+                  >Tailwind</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Store Admin -->
+          <div
+            class="project-card group bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden reveal"
+          >
+            <a
+              href="https://store.bponi.com/admin/"
+              target="_blank"
+              class="block h-48 bg-gradient-to-br from-emerald-900/50 to-teal-900/50 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-chart-line text-6xl text-white/10 group-hover:scale-110 transition-transform duration-500"
+                ></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur rounded-full text-xs text-white border border-white/10"
+              >
+                Store Admin
+              </div>
+            </a>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <a
+                  href="https://store.bponi.com/admin/"
+                  target="_blank"
+                  class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors link-hover"
+                >
+                  Store Admin
+                </a>
+                <a
+                  href="https://store.bponi.com/admin/"
+                  target="_blank"
+                  class="text-slate-400 hover:text-white transition-colors"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Unified admin dashboard managing all storefronts. Catalog,
+                orders, POS, campaigns, coupons, reseller, affiliate, and
+                partner management.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Migrated to React/TypeScript/Vite</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Standardized pagination & search</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>20+ admin views refactored</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded border border-emerald-500/20"
+                  >React</span
+                >
+                <span
+                  class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded border border-emerald-500/20"
+                  >TypeScript</span
+                >
+                <span
+                  class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded border border-emerald-500/20"
+                  >Zustand</span
+                >
+                <span
+                  class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded border border-emerald-500/20"
+                  >Apollo</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Foodi Store -->
+          <div
+            class="project-card group bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden reveal"
+          >
+            <a
+              href="https://foodi.store.bponi.com"
+              target="_blank"
+              class="block h-48 bg-gradient-to-br from-orange-900/50 to-red-900/50 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-shopping-bag text-6xl text-white/10 group-hover:scale-110 transition-transform duration-500"
+                ></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur rounded-full text-xs text-white border border-white/10"
+              >
+                Live Store
+              </div>
+            </a>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <a
+                  href="https://foodi.store.bponi.com"
+                  target="_blank"
+                  class="text-xl font-bold text-white group-hover:text-orange-400 transition-colors link-hover"
+                >
+                  Foodi Store
+                </a>
+                <a
+                  href="https://foodi.store.bponi.com"
+                  target="_blank"
+                  class="text-slate-400 hover:text-white transition-colors"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Fashion & lifestyle storefront with full e-commerce
+                capabilities. Cart, checkout, payment gateways, reselling, and
+                partner portal.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Theme system architecture</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Pixel/analytics integrations</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Partner & affiliate systems</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-orange-500/10 text-orange-400 text-xs rounded border border-orange-500/20"
+                  >Vue 3</span
+                >
+                <span
+                  class="px-2 py-1 bg-orange-500/10 text-orange-400 text-xs rounded border border-orange-500/20"
+                  >Pinia</span
+                >
+                <span
+                  class="px-2 py-1 bg-orange-500/10 text-orange-400 text-xs rounded border border-orange-500/20"
+                  >Tailwind</span
+                >
+                <span
+                  class="px-2 py-1 bg-orange-500/10 text-orange-400 text-xs rounded border border-orange-500/20"
+                  >i18n</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Edge Store -->
+          <div
+            class="project-card group bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden reveal"
+          >
+            <a
+              href="https://edge.store.bponi.com"
+              target="_blank"
+              class="block h-48 bg-gradient-to-br from-indigo-900/50 to-blue-900/50 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-layer-group text-6xl text-white/10 group-hover:scale-110 transition-transform duration-500"
+                ></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur rounded-full text-xs text-white border border-white/10"
+              >
+                Multi-theme
+              </div>
+            </a>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <a
+                  href="https://edge.store.bponi.com"
+                  target="_blank"
+                  class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors link-hover"
+                >
+                  Edge Store
+                </a>
+                <a
+                  href="https://edge.store.bponi.com"
+                  target="_blank"
+                  class="text-slate-400 hover:text-white transition-colors"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Multi-theme storefront with full shared platform features.
+                Brand-specific customizations with unified commerce backend.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Payment gateway integrations</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Responsive mobile-first design</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Dark mode & responsive</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-indigo-500/10 text-indigo-400 text-xs rounded border border-indigo-500/20"
+                  >Vue 3</span
+                >
+                <span
+                  class="px-2 py-1 bg-indigo-500/10 text-indigo-400 text-xs rounded border border-indigo-500/20"
+                  >Tailwind</span
+                >
+                <span
+                  class="px-2 py-1 bg-indigo-500/10 text-indigo-400 text-xs rounded border border-indigo-500/20"
+                  >Analytics</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Zero Store -->
+          <div
+            class="project-card group bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden reveal"
+          >
+            <a
+              href="https://zero.store.bponi.com"
+              target="_blank"
+              class="block h-48 bg-gradient-to-br from-purple-900/50 to-pink-900/50 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-rocket text-6xl text-white/10 group-hover:scale-110 transition-transform duration-500"
+                ></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur rounded-full text-xs text-white border border-white/10"
+              >
+                Analytics Heavy
+              </div>
+            </a>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <a
+                  href="https://zero.store.bponi.com"
+                  target="_blank"
+                  class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors link-hover"
+                >
+                  Zero Store
+                </a>
+                <a
+                  href="https://zero.store.bponi.com"
+                  target="_blank"
+                  class="text-slate-400 hover:text-white transition-colors"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Storefront with heavy pixel/analytics integrations. Full shared
+                commerce features with brand-specific responsive layouts.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Meta Pixel & Google Analytics</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Conversion tracking</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Performance optimized</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded border border-purple-500/20"
+                  >Vue 3</span
+                >
+                <span
+                  class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded border border-purple-500/20"
+                  >Vite</span
+                >
+                <span
+                  class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded border border-purple-500/20"
+                  >SEO</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- LMS Platform -->
+          <div
+            class="project-card group bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden reveal"
+          >
+            <a
+              href="https://www.mainamatisurvey.com.bd/"
+              target="_blank"
+              class="block h-48 bg-gradient-to-br from-cyan-900/50 to-blue-900/50 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-graduation-cap text-6xl text-white/10 group-hover:scale-110 transition-transform duration-500"
+                ></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur rounded-full text-xs text-white border border-white/10"
+              >
+                EdTech
+              </div>
+            </a>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <a
+                  href="https://www.mainamatisurvey.com.bd/"
+                  target="_blank"
+                  class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors link-hover"
+                >
+                  LMS Platform
+                </a>
+                <a
+                  href="https://www.mainamatisurvey.com.bd/"
+                  target="_blank"
+                  class="text-slate-400 hover:text-white transition-colors"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Learning Management System with course access control, payment
+                processing, and mobile-responsive student dashboards.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Fixed paid/unpaid access bugs</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Payment gateway debugging</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Mobile layout optimization</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded border border-cyan-500/20"
+                  >Vue 3</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded border border-cyan-500/20"
+                  >Pinia</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyan-500/10 text-cyan-400 text-xs rounded border border-cyan-500/20"
+                  >Mobile First</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-900/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <h2
+            class="text-sm font-semibold text-gradient uppercase tracking-wider mb-3"
+          >
+            Technical Arsenal
+          </h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-white">
+            Skills & Technologies
+          </h3>
+          <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+            Production-proven stack for building scalable e-commerce and
+            enterprise applications.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="reveal bg-slate-800/30 border border-slate-700 rounded-2xl p-6 hover:border-blue-500/30 transition-colors"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center"
+              >
+                <i class="fas fa-code text-gradient"></i>
+              </div>
+              <h4 class="text-lg font-bold text-white">Frontend Core</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >Vue 3</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >React</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >JavaScript</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >TypeScript</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >Vite</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >Tailwind CSS</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >HTML/CSS</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-blue-500 hover:text-blue-400 cursor-default"
+                >Responsive Design</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="reveal bg-slate-800/30 border border-slate-700 rounded-2xl p-6 hover:border-pink-500/30 transition-colors"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-lg bg-pink-500/10 flex items-center justify-center"
+              >
+                <i class="fas fa-database text-gradient"></i>
+              </div>
+              <h4 class="text-lg font-bold text-white">State & API</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-pink-500 hover:text-pink-400 cursor-default"
+                >Apollo GraphQL</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-pink-500 hover:text-pink-400 cursor-default"
+                >REST APIs</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-pink-500 hover:text-pink-400 cursor-default"
+                >Pinia</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-pink-500 hover:text-pink-400 cursor-default"
+                >Zustand</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-pink-500 hover:text-pink-400 cursor-default"
+                >React Hook Form</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="reveal bg-slate-800/30 border border-slate-700 rounded-2xl p-6 hover:border-emerald-500/30 transition-colors"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center"
+              >
+                <i class="fas fa-shopping-cart text-gradient"></i>
+              </div>
+              <h4 class="text-lg font-bold text-white">E-Commerce</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 cursor-default"
+                >Checkout Flows</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 cursor-default"
+                >Coupons</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 cursor-default"
+                >Logistics</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 cursor-default"
+                >Payment Gateways</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 cursor-default"
+                >POS Systems</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 cursor-default"
+                >i18n</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 cursor-default"
+                >Dark Mode</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="reveal bg-slate-800/30 border border-slate-700 rounded-2xl p-6 hover:border-orange-500/30 transition-colors"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center"
+              >
+                <i class="fas fa-server text-gradient"></i>
+              </div>
+              <h4 class="text-lg font-bold text-white">Backend</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-orange-500 hover:text-orange-400 cursor-default"
+                >Node.js</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-orange-500 hover:text-orange-400 cursor-default"
+                >Express.js</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-orange-500 hover:text-orange-400 cursor-default"
+                >MongoDB</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-orange-500 hover:text-orange-400 cursor-default"
+                >Mongoose</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-orange-500 hover:text-orange-400 cursor-default"
+                >Firebase</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-orange-500 hover:text-orange-400 cursor-default"
+                >PostgreSQL</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="reveal bg-slate-800/30 border border-slate-700 rounded-2xl p-6 hover:border-purple-500/30 transition-colors"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center"
+              >
+                <i class="fas fa-tools text-gradient"></i>
+              </div>
+              <h4 class="text-lg font-bold text-white">Tools</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-purple-500 hover:text-purple-400 cursor-default"
+                >Git</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-purple-500 hover:text-purple-400 cursor-default"
+                >GitHub</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-purple-500 hover:text-purple-400 cursor-default"
+                >ESLint</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-purple-500 hover:text-purple-400 cursor-default"
+                >Chrome DevTools</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-purple-500 hover:text-purple-400 cursor-default"
+                >Codex Pro</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="reveal bg-slate-800/30 border border-slate-700 rounded-2xl p-6 hover:border-yellow-500/30 transition-colors"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center"
+              >
+                <i class="fas fa-users-cog text-gradient"></i>
+              </div>
+              <h4 class="text-lg font-bold text-white">Leadership</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-yellow-500 hover:text-yellow-400 cursor-default"
+                >Task Coordination</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-yellow-500 hover:text-yellow-400 cursor-default"
+                >Code Review</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-yellow-500 hover:text-yellow-400 cursor-default"
+                >Mentoring</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-yellow-500 hover:text-yellow-400 cursor-default"
+                >Production Debugging</span
+              >
+              <span
+                class="skill-tag px-3 py-1.5 bg-slate-700 text-slate-200 text-sm rounded-lg border border-slate-600 hover:border-yellow-500 hover:text-yellow-400 cursor-default"
+                >Multi-project Delivery</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Metrics -->
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-gradient rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden reveal"
+        >
+          <div class="absolute inset-0 bg-grid opacity-10"></div>
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -ml-32 -mb-32"
+          ></div>
+
+          <div class="relative z-10 text-center mb-12">
+            <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Boisodai Platform Impact
+            </h3>
+            <p class="text-blue-100 text-lg">
+              Key metrics from Bangladesh's largest book e-commerce platform
+            </p>
+          </div>
+
+          <div class="relative z-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div
+                class="text-4xl sm:text-5xl font-bold text-white mb-2 counter-value"
+                data-target="200"
+              >
+                0
+              </div>
+              <div class="text-blue-200">Books Cataloged</div>
+            </div>
+            <div class="text-center">
+              <div
+                class="text-4xl sm:text-5xl font-bold text-white mb-2 counter-value"
+                data-target="50"
+              >
+                0
+              </div>
+              <div class="text-blue-200">Authors</div>
+            </div>
+            <div class="text-center">
+              <div
+                class="text-4xl sm:text-5xl font-bold text-white mb-2 counter-value"
+                data-target="7"
+              >
+                0
+              </div>
+              <div class="text-blue-200">Publishers</div>
+            </div>
+            <div class="text-center">
+              <div
+                class="text-4xl sm:text-5xl font-bold text-white mb-2 counter-value"
+                data-target="230"
+              >
+                0
+              </div>
+              <div class="text-blue-200">Customers</div>
+            </div>
+          </div>
+
+          <div class="relative z-10 mt-8 text-center">
+            <p class="text-blue-200 text-sm">
+              Plus 220K+ orders processed · Part of the larger Bponi ecosystem
+              with multiple storefronts and admin systems
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="pt-24 pb-12 bg-slate-900/50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+        <h2
+          class="text-sm font-semibold text-gradient uppercase tracking-wider mb-3"
+        >
+          Get In Touch
+        </h2>
+        <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+          Let's Build Something Amazing
+        </h3>
+        <p class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
+          I'm currently open for Frontend Developer, Mid-Level Frontend,
+          Frontend Team Lead, and frontend-focused product engineering roles. If
+          you're looking for someone who can ship production-grade code and lead
+          teams, let's talk.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+        >
+          <a
+            href="mailto:nazmulhasan1582@gmail.com"
+            class="group px-8 py-4 bg-gradient text-white font-semibold rounded-full transition-all hover:scale-105 flex items-center gap-3"
+          >
+            <i class="fas fa-envelope"></i>
+            nazmulhasan1582@gmail.com
+          </a>
+          <a
+            href="tel:+8801828347394"
+            class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-full transition-all hover:scale-105 border border-slate-700 flex items-center gap-3"
+          >
+            <i class="fas fa-phone"></i>
+            +880 1828-347394
+          </a>
+        </div>
+
+        <div class="flex justify-center gap-6">
+          <a
+            href="https://linkedin.com/in/nazmul1582"
+            target="_blank"
+            class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500 hover:bg-blue-500/10 transition-all hover:scale-110"
+          >
+            <i class="fab fa-linkedin-in text-xl"></i> </a
+          ><a
+            href="https://github.com/nazmul1582"
+            target="_blank"
+            class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500 hover:bg-blue-500/10 transition-all hover:scale-110"
+          >
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a
+            href="https://nazmul1582.netlify.app"
+            target="_blank"
+            class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500 hover:bg-blue-500/10 transition-all hover:scale-110"
+          >
+            <i class="fas fa-globe text-xl"></i>
+          </a>
+        </div>
+
+        <div class="mt-16 pt-12 border-t border-slate-800">
+          <p class="text-slate-600 text-sm">
+            &copy; 2026 Nazmul. Built with passion & precision.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scroll-to-top"
+      class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-gradient text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110 hover:-translate-y-1 group cursor-pointer"
+    >
+      <i
+        class="fas fa-arrow-up group-hover:-translate-y-0.5 transition-transform"
+      ></i>
+    </button>
+
+    <script src="./tailwind-config.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
